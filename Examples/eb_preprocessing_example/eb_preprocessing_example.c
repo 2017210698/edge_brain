@@ -24,6 +24,8 @@ int main(void)
   
   /* mean filtering, input size = 5, window = 2 */
   eb_mean_filtering_f32(testSrc, testDst, 5, 2);
+	
+	
   
   while(1);
 }
