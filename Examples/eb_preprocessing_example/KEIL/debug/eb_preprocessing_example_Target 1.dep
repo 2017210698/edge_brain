@@ -1,0 +1,30 @@
+Dependencies for Project 'eb_preprocessing_example', Target 'Target 1': (DO NOT MODIFY !)
+F (..\eb_preprocessing_example.c)(0x5BFE2040)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I..\..\Common\Include -I..\..\..\Include-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_preprocessing_example.o --omf_browse .\debug\eb_preprocessing_example.crf --depend .\debug\eb_preprocessing_example.d)
+I (..\..\Common\Include\arm_math.h)(0x53463974)
+I (..\..\Common\Include\core_cm4.h)(0x53463974)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\..\Common\Include\core_cmInstr.h)(0x53463974)
+I (..\..\Common\Include\core_cmFunc.h)(0x53463974)
+I (..\..\Common\Include\core_cm4_simd.h)(0x53463974)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+I (..\..\..\Include\edge_brain.h)(0x5BFE2033)
+F (..\..\..\Source\preprocessing\eb_mean_filtering_f32.c)(0x5BFE208A)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I..\..\Common\Include -I..\..\..\Include-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_mean_filtering_f32.o --omf_browse .\debug\eb_mean_filtering_f32.crf --depend .\debug\eb_mean_filtering_f32.d)
+I (..\..\Common\Include\arm_math.h)(0x53463974)
+I (..\..\Common\Include\core_cm4.h)(0x53463974)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\..\Common\Include\core_cmInstr.h)(0x53463974)
+I (..\..\Common\Include\core_cmFunc.h)(0x53463974)
+I (..\..\Common\Include\core_cm4_simd.h)(0x53463974)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x5475F2FE)
+F (..\..\Common\Source\system_ARMCM4.c)(0x53463998)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I..\..\Common\Include -I..\..\..\Include-I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\system_armcm4.o --omf_browse .\debug\system_armcm4.crf --depend .\debug\system_armcm4.d)
+I (..\..\Common\Include\ARMCM4.h)(0x53463732)
+I (..\..\Common\Include\core_cm4.h)(0x53463974)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\..\Common\Include\core_cmInstr.h)(0x53463974)
+I (..\..\Common\Include\core_cmFunc.h)(0x53463974)
+I (..\..\Common\Include\core_cm4_simd.h)(0x53463974)
+I (..\..\Common\Include\system_ARMCM4.h)(0x53463732)
+F (..\..\Common\Startup\ARM\startup_ARMCM4.s)(0x53463998)(--cpu Cortex-M4.fp --li -g --apcs=interwork -I D:\Keil_v5\ARM\RV31\INC-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514"--list .\debug\startup_armcm4.lst --xref -o .\debug\startup_armcm4.o --depend .\debug\startup_armcm4.d)
+F (..\..\Common\Library\arm_cortexM4lf_math.lib)(0x53463980)()
