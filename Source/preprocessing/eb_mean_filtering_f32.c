@@ -8,7 +8,7 @@
  * @date 28 Nov 2018
  * @brief Float32 mean filtering
  *
- * Float32 mean filtering using arm_mean_f32.
+ * Float32 mean filtering using arm_conv_f32 and arm_fill_f32.
  */
 
 #include "arm_math.h"
@@ -28,16 +28,26 @@
 void eb_mean_filtering_f32(
   float32_t * pSrc,
   float32_t * pDst,
+	float32_t * pBuffer,
   uint32_t blockSize,
   uint32_t winSize)
 {
-  uint32_t i;         /* loop counter */
-  uint32_t dstSize;   /* output buffer size */
-  
-  /* Calculate output buffer size */
-  dstSize = blockSize - winSize + 1;
-  
-  for(i=0; i<dstSize; i++){
-    arm_mean_f32(pSrc++, winSize, pDst++);
-  }
+	
+	
+	// using convolution method to obtain the mean filtering
+	arm_fill_f32(1.0f/winSize,pBuffer,winSize);
+	arm_conv_f32(pSrc,blockSize,pBuffer,winSize,pDst);
+	
+	/* using meaning method */
+	
+	//  uint32_t i;         /* loop counter */
+	//  uint32_t dstSize;   /* output buffer size */
+		
+	//  /* Calculate output buffer size */
+	//  dstSize = blockSize - winSize + 1;
+	//  
+	//  for(i=0; i<dstSize; i++){
+	//    arm_mean_f32(pSrc++, winSize, pDst++);
+	//  }
+	
 }

@@ -432,9 +432,19 @@
               <FilePath>..\..\..\Source\preprocessing\eb_mean_filtering_f32.c</FilePath>
             </File>
             <File>
-              <FileName>eb_harmonic_freq_f32.c</FileName>
+              <FileName>eb_outlier_detection_f32.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Source\preprocessing\eb_harmonic_freq_f32.c</FilePath>
+              <FilePath>..\..\..\Source\preprocessing\eb_outlier_detection_f32.c</FilePath>
+            </File>
+            <File>
+              <FileName>edge_brain.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\Include\edge_brain.h</FilePath>
+            </File>
+            <File>
+              <FileName>eb_ACF_f32 .c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Source\preprocessing\eb_ACF_f32 .c</FilePath>
             </File>
           </Files>
         </Group>

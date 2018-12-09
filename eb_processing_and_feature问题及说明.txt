@@ -1,0 +1,22 @@
+12.3
+1.outlier detection中b值的设定
+2.ACF中sig的长度是否为frameLen,即一帧数据大小
+3.harmonic frequency extraction 中
+从幅度谱F的频带范围内提取幅值并求和，基准的采样频率是否未给？
+
+--------------------------------------------
+12.9
+
+1.mean filtering
+ using convolution method, add a *pBuffer to store the window matrix
+ filtering后数据大小是否要输出filterSize=blockSize+winSize-1;
+
+2.outlier detection
+	由于异常点用median代替，故输出信号长度dstLen与输入信号长度一致，可以去掉dstLen参数
+3.ACF
+	add *invBuffer to store the sig[::-1].
+	add pDstBuffer to store correlation matrix
+	
+	
+
+
