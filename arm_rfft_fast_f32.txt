@@ -1,0 +1,49 @@
+
+FS = 50 * 64; 
+for(i=0;i<64;i++)
+  {
+   sample_data = 1*sin(2*PI*50*i/FS) + 1;
+  }
+status = arm_rfft_fast_init_f32(&aa,64);
+if(status == ARM_MATH_SUCCESS)
+   arm_rfft_fast_f32(&aa,sample_data,out_data,0);
+
+输出数组是out_data，现在的问题是不知道输出数据是怎么排列的，实部和虚部是怎么排列的？直流分量、基波、2此谐波。。。。是怎么排列的？
+
+排列如下：
+假设输入是in[N]，输出是out[N]，（N=2^n)
+那么函数输出out和fft输出的N个复数的对应如下：
+out[0]~y[0]
+out[1]~y[N/2]
+out[2]~y[1].real
+out[3]~y[1].imag
+out[4]~y[2].real
+out[5]~y[2].imag
+……
+out[N - 2]~y[N/2 - 1].real
+out[N - 1]~y[N/2 - 1].imag
+
+这样存储是利用了实数fft的以下性质：
+（1）y[0]和y[N/2]的虚部必定为0；
+（2）y[N/2 - i]和y[N/2 + i]是共轭的，也就是实部相等，虚部相反，所以只要存储一个就可以
+这样如果计算幅值的话，需要把out[1]挪到它该去的地方，然后置0。不过一般也不会用到fft结果的第一个值，所以不管它也可以。
+
+另外，某些版本CMSIS DSP库是有问题的，我被坑了一个小时才发现。
+还有就是关于对应关系，对于实部的描述肯定是没有问题的，虚部有可能跟我说的是反的，即out[3]~-y[1].imag
+
+
+/* 初始化S中的参数 */
+    arm_rfft_fast_init_f32(&S,ADC_FIFO_SIZE);
+    
+    /* 2048点实序列快速FFT */ 
+    arm_rfft_fast_f32(&S, input_v, output_v, 0);
+    arm_rfft_fast_f32(&S, input_i, output_i, 0);
+
+    VX= output_v[2];           /* 实部 */
+    VY= output_v[3];           /* 虚部 */    
+    
+    IX= output_i[2];           /* 实部 */
+    IY= output_i[3];           /* 虚部 */
+    
+    mag_v=mySqrt(VX*VX+ VY*VY);          /*求基波电压*/
+    mag_i=mySqrt(IX*IX+ IY*IY);          /*求基波电流*/
