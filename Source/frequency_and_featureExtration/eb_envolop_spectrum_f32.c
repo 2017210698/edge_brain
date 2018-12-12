@@ -25,29 +25,47 @@
 				 project organization. A more efficient approach 
 				 should be implemented. 
 */
-#define PI 3.14
 
 void eb_envolop_spectrum_f32(
 	float32_t * pSrc,
 	float32_t * pDst,
-	uint8_t src_size,
-	uint8_t fft_size)
+	float32_t * pFftBuffer,
+	uint16_t srcLen,
+	uint16_t fftSize)
 {
-	uint8_t i; // loop variant
-	float32_t * pSrc_fft;
-	float32_t * pSrc_abs;
-	uint32_t t; // the time points of input signal
-	float32_t Ht[src_size];
+//	uint8_t ifftFlag=0; // rfft if flag is 0, rifft if flag is 1
+//	arm_rfft_fast_instance_f32 S;
+//		/* initiate the structure */
+//	arm_rfft_fast_init_f32(&S,fftSize);
+//	
+//	/* 1024 points arm_rfft_fast_f32 */
+//	arm_rfft_fast_f32(&S,pSrc,pFftBuffer,ifftFlag);
 
-	for(i=0;i<src_size;i++) 
-	{
-		Ht[i]=i/(PI*fft_size);
-	}
-	arm_conv_f32()
-	arm_rms_f32(pSrc,src_size,)
-	arm_cfft_f32(&arm_cfft_f32_len1024,pSrc,0,1);
-	arm_cmplx_mag_f32(pSrc,pSrc_fft,1024);
+//	if(srcLen%2!=0)
+//	{
+//		srcLen--;
+//	}
+
+//	
+//	arm_cmplx_mag_f32(pSrc,pSrc_fft,1024);
+//	
+
+	uint16_t i; 
+	arm_rfft_fast_instance_f32 S; 
+	/* 实数序列FFT长度 */ 
+	uint8_t ifftFlag = 0; /* 初始化结构体S中的参数 */ 
+	float32_t testInput_f32_10khz[1024];
+	float32_t testOutput_f32_10khz[2048];
+	float32_t testOutput[1024];
+	arm_rfft_fast_init_f32(&S, fftSize);
 	
-
+	/* 按照实部，虚部，实部，虚部..... 的顺序存储数据 */ 
+	for(i=0; i<1024; i++) 
+	{ /* 50Hz正弦波，采样率1KHz */ 
+	testInput_f32_10khz[i] = 1.2f*arm_sin_f32(2*3.1415926f*50*i/1000)+1; }
+	/* 1024点实序列快速FFT */ 
+	arm_rfft_fast_f32(&S, testInput_f32_10khz, testOutput_f32_10khz, ifftFlag);
+	arm_cmplx_mag_f32(testOutput_f32_10khz, testOutput, fftSize);
+	
 	}
 

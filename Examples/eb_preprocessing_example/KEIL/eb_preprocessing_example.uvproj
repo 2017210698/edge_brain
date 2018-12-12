@@ -109,12 +109,12 @@
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
           <SimDllArguments></SimDllArguments>
-          <SimDlgDll>DCM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <SimDlgDll>DARMSTM.dll</SimDlgDll>
+          <SimDlgDllArguments>-pARMCM4</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
           <TargetDllArguments></TargetDllArguments>
-          <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+          <TargetDlgDll>DARMSTM.dll</TargetDlgDll>
+          <TargetDlgDllArguments>-pARMCM4</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -245,7 +245,7 @@
             <Ro3Chk>0</Ro3Chk>
             <Ir1Chk>0</Ir1Chk>
             <Ir2Chk>0</Ir2Chk>
-            <Ra1Chk>0</Ra1Chk>
+            <Ra1Chk>1</Ra1Chk>
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
             <Im1Chk>0</Im1Chk>
@@ -323,8 +323,8 @@
               </OCR_RVCT5>
               <OCR_RVCT6>
                 <Type>0</Type>
-                <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <StartAddress>0x20040000</StartAddress>
+                <Size>0x2000</Size>
               </OCR_RVCT6>
               <OCR_RVCT7>
                 <Type>0</Type>
@@ -422,29 +422,24 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>eb_preprocessing_example.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\eb_preprocessing_example.c</FilePath>
-            </File>
-            <File>
-              <FileName>eb_mean_filtering_f32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Source\preprocessing\eb_mean_filtering_f32.c</FilePath>
-            </File>
-            <File>
-              <FileName>eb_outlier_detection_f32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Source\preprocessing\eb_outlier_detection_f32.c</FilePath>
-            </File>
-            <File>
               <FileName>edge_brain.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\Include\edge_brain.h</FilePath>
             </File>
             <File>
-              <FileName>eb_ACF_f32 .c</FileName>
+              <FileName>eb_frequency_and_featureExtration_example.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Source\preprocessing\eb_ACF_f32 .c</FilePath>
+              <FilePath>..\eb_frequency_and_featureExtration_example.c</FilePath>
+            </File>
+            <File>
+              <FileName>eb_harmonic_freq_f32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</FilePath>
+            </File>
+            <File>
+              <FileName>eb_envolop_spectrum_f32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</FilePath>
             </File>
           </Files>
         </Group>

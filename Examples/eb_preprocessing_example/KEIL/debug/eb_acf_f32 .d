@@ -7,4 +7,3 @@
 .\debug\eb_acf_f32 .o: ..\..\Common\Include\core_cm4_simd.h
 .\debug\eb_acf_f32 .o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\debug\eb_acf_f32 .o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\debug\eb_acf_f32 .o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h

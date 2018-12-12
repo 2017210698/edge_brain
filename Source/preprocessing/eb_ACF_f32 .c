@@ -12,7 +12,7 @@
  */
 
 #include "arm_math.h"
-#include "assert.h"
+// #include "assert.h"
 /**
  * @brief Float32 Autocorrelation extraction method.
  * @param[in]   *pSrc points to the input buffer
@@ -25,7 +25,7 @@ void eb_ACF_f32(
   float32_t * pSrc,
   float32_t * pitch,
 	float32_t * invBuffer,
-	float32_t * pDstBuffer,
+	float32_t * pCorrBuffer,
   uint32_t lmin,
   uint32_t lmax,
   uint32_t samplingRate,
@@ -43,10 +43,10 @@ void eb_ACF_f32(
 	}
 	
 	/* compute the correlate matrix */
-  arm_correlate_f32(pSrc,srcLen,invBuffer,srcLen,pDstBuffer);
+  arm_correlate_f32(pSrc,srcLen,invBuffer,srcLen,pCorrBuffer);
 		
 	/* compute the max of correlate matrix */
-	arm_max_f32(pDstBuffer,11,&Max,&maxIndex);
+	arm_max_f32(pCorrBuffer,2*srcLen-1,&Max,&maxIndex);
 	
 	/* compute the pitch index in samplingRate */
 	pitchIndex=(maxIndex+1)/2;
@@ -54,7 +54,7 @@ void eb_ACF_f32(
 	/* compute the pitch */
 	pitch[0]=samplingRate*pitchIndex/srcLen;
 	
-	assert(pitch[0]>lmin && pitch[0]<lmax);
+	//assert(*pitch>lmin && *pitch<lmax);
 	
 	
 	/**

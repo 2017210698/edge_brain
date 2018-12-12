@@ -27,34 +27,53 @@
          should be implemented. 
 */
 
-#define fftSize 1024
-#define ifftFlag 0
-#define doBitReverse 1
-
 void eb_harmonic_freq_f32(
   float32_t * pSrc,
 	float32_t * pDst,
-	float32_t f_0,
-	float32_t half_band,
-	uint8_t dst_size)
+	float32_t * pFftBuffer,
+	float32_t * pMagBuffer,
+	uint8_t baseFreq,
+	uint8_t halfBand,
+	uint8_t dstSize,
+	uint32_t samplingRate)
 {
   uint8_t dstCount; // loop number
-  
-  float32_t pDst_mean[2*half_band];
+  arm_rfft_fast_instance_f32 S;
+	uint16_t fftSize=1024; // real sequence fft length
+	uint8_t ifftFlag=0; // rfft if flag is 0, rifft if flag is 1
+	float32_t pMeanResult; // store intermediate result
+	uint8_t blockSize; // store frequency range of harmonic component
 
-  float32_t mag_spectrum[fftSize]; // magnitude spectrum 
-        
-   /* Process the data through the CFFT module */
-  arm_cfft_f32(&arm_cfft_sR_f32_len1024,pSrc,ifftFlag,doBitReverse);
-
-   /* Process the data through the Complex Magnitude Module for
-   calculating the magnitude */
-   arm_cmplx_mag_f32(pSrc,mag_spectrum,fftSize);
+	uint8_t deltaRate=samplingRate/fftSize;
+	
+	/* 0.5Multiple frequency extration parameters */
+	uint8_t begFreq=(0.5*baseFreq-halfBand)/deltaRate;
+	uint8_t endFreq=(0.5*baseFreq+halfBand)/deltaRate;
+	blockSize=endFreq-begFreq+1;
+	
+	/* initiate the structure */
+	arm_rfft_fast_init_f32(&S,fftSize);
+	
+	/* 1024 points arm_rfft_fast_f32 */
+	arm_rfft_fast_f32(&S,pSrc,pFftBuffer,ifftFlag);
+	
+	/* compute the magnitute 512 points */
+	arm_cmplx_mag_f32(pFftBuffer,pMagBuffer,fftSize);
   
-  // harmonic frequency extraction
-  for(dstCount=1;dstCount<dst_size;dstCount++){
-   // arm_mean_f32(dstCount*f_0-half_band,2*half_band,pDst_mean);
+
+	/* harmonic frequency extraction */
+	/* 0.5Multiple frequency extration */
+	arm_mean_f32(&pMagBuffer[begFreq],blockSize,&pMeanResult);
+	pDst[0]=pMeanResult*blockSize;
+	
+	/* other Multiple frequency extration */
+	for(dstCount=1;dstCount<dstSize;dstCount++)
+	{
+		begFreq=(dstCount*baseFreq-halfBand)/deltaRate;
+		endFreq=(dstCount*baseFreq+halfBand)/deltaRate;
+		blockSize=endFreq-begFreq+1;
+		arm_mean_f32(&pMagBuffer[begFreq],blockSize,&pMeanResult);
+		pDst[dstCount]=pMeanResult*blockSize;
+		pDst++;
   }
-  arm_scale_f32(pDst_mean,2*half_band,pDst,dst_size);
-  
 }

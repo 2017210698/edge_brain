@@ -48,6 +48,5 @@ void eb_mean_filtering_f32(
 	//  
 	//  for(i=0; i<dstSize; i++){
 	//    arm_mean_f32(pSrc++, winSize, pDst++);
-	//  }
-	
+	//  }	
 }

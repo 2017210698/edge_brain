@@ -1,0 +1,10 @@
+.\debug\eb_frequency_and_featureextration_example.o: ..\eb_frequency_and_featureExtration_example.c
+.\debug\eb_frequency_and_featureextration_example.o: ..\..\Common\Include\arm_math.h
+.\debug\eb_frequency_and_featureextration_example.o: ..\..\Common\Include\core_cm4.h
+.\debug\eb_frequency_and_featureextration_example.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\debug\eb_frequency_and_featureextration_example.o: ..\..\Common\Include\core_cmInstr.h
+.\debug\eb_frequency_and_featureextration_example.o: ..\..\Common\Include\core_cmFunc.h
+.\debug\eb_frequency_and_featureextration_example.o: ..\..\Common\Include\core_cm4_simd.h
+.\debug\eb_frequency_and_featureextration_example.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\debug\eb_frequency_and_featureextration_example.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\debug\eb_frequency_and_featureextration_example.o: ..\..\..\Include\edge_brain.h

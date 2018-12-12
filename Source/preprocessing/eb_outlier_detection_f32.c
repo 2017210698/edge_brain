@@ -27,7 +27,6 @@
 */
 void eb_outlier_detection_f32(
   float32_t * pSrc,
-  float32_t * pDst,
 	uint32_t srcLen,
 	float32_t b
 )
@@ -51,12 +50,14 @@ void eb_outlier_detection_f32(
   // outlier detection
   lowerLimit=(1-3*b)*median;
   upperLimit=(1+3*b)*median;
-
   for(srcCount=0;srcCount<srcLen;srcCount++)
 	{	
     if(*pSrc<lowerLimit || *pSrc>upperLimit)
 		{
-      *pDst++=median;
+      *pSrc++=median;
     }
+		else{
+			pSrc++;
+		}
 	}
 }
