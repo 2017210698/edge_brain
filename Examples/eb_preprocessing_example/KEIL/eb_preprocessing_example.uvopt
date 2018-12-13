@@ -137,89 +137,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>75</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>858</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_harmonic_freq_f32.c\75</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>67</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>796</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_harmonic_freq_f32.c\67</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>66</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>784</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_harmonic_freq_f32.c\66</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>61</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>774</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_harmonic_freq_f32.c\61</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>58</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>762</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_harmonic_freq_f32.c\58</Expression>
-        </Bp>
-        <Bp>
-          <Number>5</Number>
-          <Type>0</Type>
           <LineNumber>40</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>536</Address>
+          <Address>498</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -231,23 +151,7 @@
           <Expression>\\eb_mean_filtering_example\../eb_frequency_and_featureExtration_example.c\40</Expression>
         </Bp>
         <Bp>
-          <Number>6</Number>
-          <Type>0</Type>
-          <LineNumber>36</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>474</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\eb_frequency_and_featureExtration_example.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../eb_frequency_and_featureExtration_example.c\36</Expression>
-        </Bp>
-        <Bp>
-          <Number>7</Number>
+          <Number>1</Number>
           <Type>0</Type>
           <LineNumber>29</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -263,27 +167,123 @@
           <Expression>\\eb_mean_filtering_example\../eb_frequency_and_featureExtration_example.c\29</Expression>
         </Bp>
         <Bp>
-          <Number>8</Number>
+          <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>77</LineNumber>
+          <LineNumber>38</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>894</Address>
+          <Address>474</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</Filename>
+          <Filename>..\eb_frequency_and_featureExtration_example.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_harmonic_freq_f32.c\77</Expression>
+          <Expression>\\eb_mean_filtering_example\../eb_frequency_and_featureExtration_example.c\38</Expression>
+        </Bp>
+        <Bp>
+          <Number>3</Number>
+          <Type>0</Type>
+          <LineNumber>43</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>538</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\43</Expression>
+        </Bp>
+        <Bp>
+          <Number>4</Number>
+          <Type>0</Type>
+          <LineNumber>50</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>586</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\50</Expression>
+        </Bp>
+        <Bp>
+          <Number>5</Number>
+          <Type>0</Type>
+          <LineNumber>54</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>624</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\54</Expression>
+        </Bp>
+        <Bp>
+          <Number>6</Number>
+          <Type>0</Type>
+          <LineNumber>37</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>534</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\37</Expression>
+        </Bp>
+        <Bp>
+          <Number>7</Number>
+          <Type>0</Type>
+          <LineNumber>47</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>556</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\47</Expression>
+        </Bp>
+        <Bp>
+          <Number>8</Number>
+          <Type>0</Type>
+          <LineNumber>52</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>600</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\52</Expression>
         </Bp>
         <Bp>
           <Number>9</Number>
           <Type>0</Type>
-          <LineNumber>56</LineNumber>
+          <LineNumber>53</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>952</Address>
+          <Address>612</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -292,14 +292,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\56</Expression>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\53</Expression>
         </Bp>
         <Bp>
           <Number>10</Number>
           <Type>0</Type>
-          <LineNumber>60</LineNumber>
+          <LineNumber>55</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>954</Address>
+          <Address>634</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -308,39 +308,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\60</Expression>
-        </Bp>
-        <Bp>
-          <Number>11</Number>
-          <Type>0</Type>
-          <LineNumber>68</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>1058</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\68</Expression>
-        </Bp>
-        <Bp>
-          <Number>12</Number>
-          <Type>0</Type>
-          <LineNumber>70</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>1070</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\70</Expression>
+          <Expression>\\eb_mean_filtering_example\../../../Source/frequency_and_featureExtration/eb_envolop_spectrum_f32.c\55</Expression>
         </Bp>
       </Breakpoint>
       <MemoryWindow1>
@@ -433,18 +401,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</PathWithFileName>
-      <FilenameWithoutPath>eb_harmonic_freq_f32.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>4</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</PathWithFileName>
       <FilenameWithoutPath>eb_envolop_spectrum_f32.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -460,7 +416,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>5</FileNumber>
+      <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -472,7 +428,7 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>6</FileNumber>
+      <FileNumber>5</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -492,7 +448,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>3</GroupNumber>
-      <FileNumber>7</FileNumber>
+      <FileNumber>6</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>

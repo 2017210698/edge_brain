@@ -1,6 +1,6 @@
 Dependencies for Project 'eb_preprocessing_example', Target 'Target 1': (DO NOT MODIFY !)
 F (..\..\..\Include\edge_brain.h)(0x5C1103E2)()
-F (..\eb_frequency_and_featureExtration_example.c)(0x5C1100A8)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_frequency_and_featureextration_example.o --omf_browse .\debug\eb_frequency_and_featureextration_example.crf --depend .\debug\eb_frequency_and_featureextration_example.d)
+F (..\eb_frequency_and_featureExtration_example.c)(0x5C11CA98)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_frequency_and_featureextration_example.o --omf_browse .\debug\eb_frequency_and_featureextration_example.crf --depend .\debug\eb_frequency_and_featureextration_example.d)
 I (..\..\Common\Include\arm_math.h)(0x5C0FB348)
 I (..\..\Common\Include\core_cm4.h)(0x5C0FB348)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -10,18 +10,7 @@ I (..\..\Common\Include\core_cm4_simd.h)(0x5C0FB348)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x599EDB3E)
 I (..\..\..\Include\edge_brain.h)(0x5C1103E2)
-F (..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c)(0x5C10FED5)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_harmonic_freq_f32.o --omf_browse .\debug\eb_harmonic_freq_f32.crf --depend .\debug\eb_harmonic_freq_f32.d)
-I (..\..\Common\Include\arm_math.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\..\Common\Include\core_cmInstr.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cmFunc.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4_simd.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\..\Common\Include\arm_const_structs.h)(0x5C0FB348)
-I (..\..\Common\Include\arm_common_tables.h)(0x5C0FB348)
-F (..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c)(0x5C110413)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_envolop_spectrum_f32.o --omf_browse .\debug\eb_envolop_spectrum_f32.crf --depend .\debug\eb_envolop_spectrum_f32.d)
+F (..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c)(0x5C11D1AC)(-c --cpu Cortex-M4.fp --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1"-o .\debug\eb_envolop_spectrum_f32.o --omf_browse .\debug\eb_envolop_spectrum_f32.crf --depend .\debug\eb_envolop_spectrum_f32.d)
 I (..\..\Common\Include\arm_math.h)(0x5C0FB348)
 I (..\..\Common\Include\core_cm4.h)(0x5C0FB348)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)

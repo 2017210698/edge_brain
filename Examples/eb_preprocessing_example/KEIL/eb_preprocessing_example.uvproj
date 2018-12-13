@@ -432,11 +432,6 @@
               <FilePath>..\eb_frequency_and_featureExtration_example.c</FilePath>
             </File>
             <File>
-              <FileName>eb_harmonic_freq_f32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Source\frequency_and_featureExtration\eb_harmonic_freq_f32.c</FilePath>
-            </File>
-            <File>
               <FileName>eb_envolop_spectrum_f32.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c</FilePath>

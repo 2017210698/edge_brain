@@ -1,6 +1,5 @@
 --cpu=Cortex-M4.fp
 ".\debug\eb_frequency_and_featureextration_example.o"
-".\debug\eb_harmonic_freq_f32.o"
 ".\debug\eb_envolop_spectrum_f32.o"
 ".\debug\system_armcm4.o"
 ".\debug\startup_armcm4.o"

@@ -47,3 +47,23 @@ out[N - 1]~y[N/2 - 1].imag
     
     mag_v=mySqrt(VX*VX+ VY*VY);          /*求基波电压*/
     mag_i=mySqrt(IX*IX+ IY*IY);          /*求基波电流*/
+
+
+      uint16_t i;
+  //uint16_t j;
+  float32_t signal[1024];
+  float32_t sigout[2048];
+  float32_t signalT[2048];
+  arm_rfft_fast_instance_f32 S,S1;
+    /* initiate the structure */
+  arm_rfft_fast_init_f32(&S,1024);
+  for(i=0;i<1024;i++)
+  {
+    signal[i]=1.2f*arm_sin_f32(2*3.1415926f*50*i/1000)+1;
+  }
+  
+  arm_rfft_fast_f32(&S,signal,sigout,0);
+  arm_scale_f32(sigout,2,sigout,2048);
+  //for
+  arm_rfft_fast_init_f32(&S1,2048);
+  arm_rfft_fast_f32(&S1,sigout,signalT,1);
