@@ -227,14 +227,14 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>0</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>1</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
             <RoSelD>0</RoSelD>
             <RwSelD>5</RwSelD>
             <CodeSel>0</CodeSel>
-            <OptFeed>0</OptFeed>
+            <OptFeed>1</OptFeed>
             <NoZi1>0</NoZi1>
             <NoZi2>0</NoZi2>
             <NoZi3>0</NoZi3>
@@ -324,7 +324,7 @@
               <OCR_RVCT6>
                 <Type>0</Type>
                 <StartAddress>0x20040000</StartAddress>
-                <Size>0x2000</Size>
+                <Size>0x20000</Size>
               </OCR_RVCT6>
               <OCR_RVCT7>
                 <Type>0</Type>
@@ -375,7 +375,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>ARM_MATH_CM4, __FPU_PRESENT = 1</Define>
+              <Define>ARM_MATH_CM4, __FPU_PRESENT = 1,DEBUG_ENABLE_SEMIHOST</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\Common\Include;..\..\..\Include</IncludePath>
             </VariousControls>

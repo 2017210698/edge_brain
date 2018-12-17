@@ -1,0 +1,5 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include
+-ID:\Keil_v5\ARM\RV31\INC
+-ID:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST
+-o .\debug\eb_envolop_spectrum_f32.o --omf_browse .\debug\eb_envolop_spectrum_f32.crf --depend .\debug\eb_envolop_spectrum_f32.d --feedback ".\debug\eb_mean_filtering_example.fed" "..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c"

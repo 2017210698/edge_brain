@@ -227,9 +227,9 @@ ARM Macro Assembler    Page 4
 ]
   137 00000000                 IMPORT           SystemInit
   138 00000000                 IMPORT           __main
-  139 00000000 4809            LDR              R0, =SystemInit
+  139 00000000 4806            LDR              R0, =SystemInit
   140 00000002 4780            BLX              R0
-  141 00000004 4809            LDR              R0, =__main
+  141 00000004 4806            LDR              R0, =__main
   142 00000006 4700            BX               R0
   143 00000008                 ENDP
   144 00000008         
@@ -394,36 +394,23 @@ ARM Macro Assembler    Page 6
 ARM Macro Assembler    Page 7 
 
 
-  256 0000001C         
-  257 0000001C                 IMPORT           __use_two_region_memory
-  258 0000001C                 EXPORT           __user_initial_stackheap
-  259 0000001C         
-  260 0000001C         __user_initial_stackheap
-                               PROC
-  261 0000001C 4804            LDR              R0, =  Heap_Mem
-  262 0000001E 4905            LDR              R1, =(Stack_Mem + Stack_Size)
-  263 00000020 4A05            LDR              R2, = (Heap_Mem +  Heap_Size)
-  264 00000022 4B06            LDR              R3, = Stack_Mem
-  265 00000024 4770            BX               LR
-  266 00000026                 ENDP
-  267 00000026         
-  268 00000026 00 00           ALIGN
-  269 00000028         
-  270 00000028                 ENDIF
-  271 00000028         
-  272 00000028         
-  273 00000028                 END
+  250 0000001C         
+  251 0000001C                 EXPORT           __initial_sp
+  252 0000001C                 EXPORT           __heap_base
+  253 0000001C                 EXPORT           __heap_limit
+  254 0000001C         
+  255 0000001C                 ELSE
+  270                          ENDIF
+  271 0000001C         
+  272 0000001C         
+  273 0000001C                 END
               00000000 
-              00000000 
-              00000000 
-              00040000 
-              00008000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\debug\startup_armcm4.d -o.\debug\startup_armcm4.o -ID:\Keil_v
-5\ARM\RV31\INC -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SE
-TA 526" --list=.\debug\startup_armcm4.lst ..\..\Common\Startup\ARM\startup_ARMC
-M4.s
+5\ARM\RV31\INC -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" -
+-predefine="__UVISION_VERSION SETA 526" --list=.\debug\startup_armcm4.lst ..\..
+\Common\Startup\ARM\startup_ARMCM4.s
 
 
 
@@ -444,9 +431,8 @@ Symbol: Stack_Mem
    Definitions
       At line 49 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
-      At line 262 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-      At line 264 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-
+      None
+Comment: Stack_Mem unused
 __initial_sp 00040000
 
 Symbol: __initial_sp
@@ -454,7 +440,8 @@ Symbol: __initial_sp
       At line 50 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
       At line 76 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-Comment: __initial_sp used once
+      At line 251 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
+
 3 symbols
 
 
@@ -476,25 +463,24 @@ Symbol: Heap_Mem
    Definitions
       At line 61 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
-      At line 261 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-      At line 263 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-
+      None
+Comment: Heap_Mem unused
 __heap_base 00000000
 
 Symbol: __heap_base
    Definitions
       At line 60 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
-      None
-Comment: __heap_base unused
+      At line 252 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
+Comment: __heap_base used once
 __heap_limit 00008000
 
 Symbol: __heap_limit
    Definitions
       At line 62 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
-      None
-Comment: __heap_limit unused
+      At line 253 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
+Comment: __heap_limit used once
 4 symbols
 
 
@@ -878,15 +864,7 @@ Symbol: WDT_IRQHandler
       At line 94 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
       At line 192 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
 
-__user_initial_stackheap 0000001C
-
-Symbol: __user_initial_stackheap
-   Definitions
-      At line 260 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-   Uses
-      At line 258 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-Comment: __user_initial_stackheap used once
-36 symbols
+35 symbols
 
 
 
@@ -900,8 +878,7 @@ Symbol: Heap_Size
       At line 57 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
       At line 61 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-      At line 263 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-
+Comment: Heap_Size used once
 Stack_Size 00040000
 
 Symbol: Stack_Size
@@ -909,8 +886,7 @@ Symbol: Stack_Size
       At line 46 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
    Uses
       At line 49 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-      At line 262 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-
+Comment: Stack_Size used once
 __Vectors_Size 000000C0
 
 Symbol: __Vectors_Size
@@ -942,13 +918,5 @@ Symbol: __main
    Uses
       At line 141 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
 Comment: __main used once
-__use_two_region_memory 00000000
-
-Symbol: __use_two_region_memory
-   Definitions
-      At line 257 in file ..\..\Common\Startup\ARM\startup_ARMCM4.s
-   Uses
-      None
-Comment: __use_two_region_memory unused
-3 symbols
-388 symbols in table
+2 symbols
+385 symbols in table

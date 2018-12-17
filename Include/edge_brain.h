@@ -127,7 +127,7 @@ void eb_ACF_f32(
  void eb_envolop_spectrum_f32(
 	float32_t * pSrc,
 	float32_t * pDst,
-	float32_t * pFftBuffer,
+	float32_t * pBuffer,
 	uint16_t srcLen,
   uint16_t fftSize);
 
