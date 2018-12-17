@@ -31,57 +31,39 @@ void eb_envolop_spectrum_f32(
 	float32_t * pSrc,
 	float32_t * pDst,
 	float32_t * pBuffer,
-	uint16_t srcLen,
+	float32_t * pTransMatrix,
 	uint16_t fftSize)
 {
 	uint16_t i; // loop variant
-	float32_t pTransMatrix[2*256];
-	float32_t pBufferRes[256];
-	
-	/* insert zero to prepare data format for arm_cfft_f32 */ 
-	for(i=0;i<fftSize;i++)
+	uint8_t ifftFlag=0; // rfft if flag is 0, rifft if flag is 1
+  uint8_t bitReverseFlag=1; // flag that enables (bitReverseFlag=1) or disables (bitReverseFlag=0) bit
+
+	for(i=0;i<fftSize;i++) // insert zero to prepare data format for arm_cfft_f32 
 	{
 		pBuffer[2*i]=pSrc[i];
 		pBuffer[2*i+1]=0;
-		
-		pBufferRes[i]=pSrc[i];
+		pDst[i]=pSrc[i]; // backup input signal  
 	}
 	
 	/* utilize the method in matlab to realize hilbert transform   */ 
-	arm_cfft_f32(&arm_cfft_sR_f32_len16,pBuffer,0,1); // calculate the FFT of  the input sequence
+	arm_cfft_f32(&arm_cfft_sR_f32_len256,pBuffer,ifftFlag,bitReverseFlag); // calculate the FFT of  the input sequence
 	/* create a vector h whose elements h(i) have the format below */
 	arm_offset_f32(pTransMatrix,-2,pTransMatrix,fftSize+1);
 	pTransMatrix[0]=-1;
 	pTransMatrix[fftSize+1]=-1;
 	arm_mult_f32(pBuffer,pTransMatrix,pBuffer,2*fftSize);
-	/**
-	for(i=0;i<2*fftSize;i++)
-	{
-		if(i==0||i==1){
-		pBuffer[i]=-pBuffer[i];
-		}
-		else if(i>1&&i<fftSize)
-		{
-			pBuffer[i]=-2*pBuffer[i];
-		}
-		else if(i==fftSize||i==fftSize+1){
-			pBuffer[i]=-pBuffer[i];
-		}
-		else{
-			pBuffer[i]=0;
-		}
-	}
-	*/
+	
+
 	 // calculate the inverse FFT of the sequence obtained above
-	arm_cfft_f32(&arm_cfft_sR_f32_len16,pBuffer,1,1);
+	ifftFlag=1;
+	arm_cfft_f32(&arm_cfft_sR_f32_len256,pBuffer,ifftFlag,bitReverseFlag);
 	
 	/* calculate sqrt(signal^2+hilbert^2) */
 	for(i=0;i<fftSize;i++)
 	{
-		//pBuffer[2*i] = pSrc[i-fftSize];
-		//pBuffer[2*i] = 1.2f*arm_sin_f32(2*3.1415926f*50*i/1000)+1;
-		pBuffer[2*i]=pBufferRes[i];
+		pBuffer[2*i]=pDst[i];
 	}
+	
 	arm_cmplx_mag_f32(pBuffer,pSrc,fftSize);
 	
 	/* insert zero to prepare data format for arm_cfft_f32 */ 
@@ -91,6 +73,7 @@ void eb_envolop_spectrum_f32(
 		pBuffer[2*i+1]=0;
 	}
 	/* calculate the FFT of  the input sequence and the magnitude after FFT to obtain envolop */
-	arm_cfft_f32(&arm_cfft_sR_f32_len16,pBuffer,0,1);
+	ifftFlag=0;
+	arm_cfft_f32(&arm_cfft_sR_f32_len256,pBuffer,ifftFlag,bitReverseFlag);
 	arm_cmplx_mag_f32(pBuffer,pDst,fftSize);
 }

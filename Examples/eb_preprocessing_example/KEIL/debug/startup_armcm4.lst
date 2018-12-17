@@ -407,8 +407,8 @@ ARM Macro Assembler    Page 7
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=.\debug\startup_armcm4.d -o.\debug\startup_armcm4.o -ID:\Keil_v
-5\ARM\RV31\INC -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" -
+erwork --depend=.\debug\startup_armcm4.d -o.\debug\startup_armcm4.o -IC:\Keil_v
+5\ARM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" -
 -predefine="__UVISION_VERSION SETA 526" --list=.\debug\startup_armcm4.lst ..\..
 \Common\Startup\ARM\startup_ARMCM4.s
 

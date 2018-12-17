@@ -128,7 +128,7 @@ void eb_ACF_f32(
 	float32_t * pSrc,
 	float32_t * pDst,
 	float32_t * pBuffer,
-	uint16_t srcLen,
+	float32_t * pTransMatrix,
   uint16_t fftSize);
 
 

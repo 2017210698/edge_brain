@@ -1,5 +1,5 @@
 -c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include
--ID:\Keil_v5\ARM\RV31\INC
--ID:\Keil_v5\ARM\CMSIS\Include
+-IC:\Keil_v5\ARM\RV31\INC
+-IC:\Keil_v5\ARM\CMSIS\Include
 -D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST
 -o .\debug\eb_frequency_and_featureextration_example.o --omf_browse .\debug\eb_frequency_and_featureextration_example.crf --depend .\debug\eb_frequency_and_featureextration_example.d --feedback ".\debug\eb_mean_filtering_example.fed" "..\eb_frequency_and_featureExtration_example.c"

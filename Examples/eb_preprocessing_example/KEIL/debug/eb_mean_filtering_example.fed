@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Mon Dec 17 11:39:44 2018
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Mon Dec 17 16:20:59 2018
 ;VERSION 0.2
 ;FILE arm_bitreversal2.o
 ;FILE arm_cfft_f32.o
@@ -22,9 +22,6 @@ __asm___14_arm_mult_f32_c_82cc5343____REVSH <= USED 0
 ;FILE arm_offset_f32.o
 __asm___16_arm_offset_f32_c_34081a3a____REV16 <= USED 0
 __asm___16_arm_offset_f32_c_34081a3a____REVSH <= USED 0
-;FILE arm_sin_f32.o
-__asm___13_arm_sin_f32_c_1ebaebf6____REV16 <= USED 0
-__asm___13_arm_sin_f32_c_1ebaebf6____REVSH <= USED 0
 ;FILE eb_envolop_spectrum_f32.o
 __asm___25_eb_envolop_spectrum_f32_c_c1832500____REV16 <= USED 0
 __asm___25_eb_envolop_spectrum_f32_c_c1832500____REVSH <= USED 0

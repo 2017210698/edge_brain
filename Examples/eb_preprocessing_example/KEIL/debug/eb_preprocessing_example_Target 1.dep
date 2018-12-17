@@ -1,33 +1,33 @@
 Dependencies for Project 'eb_preprocessing_example', Target 'Target 1': (DO NOT MODIFY !)
-F (..\..\..\Include\edge_brain.h)(0x5C14E7D3)()
-F (..\eb_frequency_and_featureExtration_example.c)(0x5C171A29)(-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST-o .\debug\eb_frequency_and_featureextration_example.o --omf_browse .\debug\eb_frequency_and_featureextration_example.crf --depend .\debug\eb_frequency_and_featureextration_example.d)
-I (..\..\Common\Include\arm_math.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\..\Common\Include\core_cmInstr.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cmFunc.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4_simd.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\..\..\Include\edge_brain.h)(0x5C14E7D3)
-F (..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c)(0x5C171A4B)(-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST-o .\debug\eb_envolop_spectrum_f32.o --omf_browse .\debug\eb_envolop_spectrum_f32.crf --depend .\debug\eb_envolop_spectrum_f32.d)
-I (..\..\Common\Include\arm_math.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\..\Common\Include\core_cmInstr.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cmFunc.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4_simd.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
-I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x599EDB3E)
-I (..\..\Common\Include\arm_const_structs.h)(0x5C0FB348)
-I (..\..\Common\Include\arm_common_tables.h)(0x5C0FB348)
-F (..\..\Common\Source\system_ARMCM4.c)(0x5C0FB348)(-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST-o .\debug\system_armcm4.o --omf_browse .\debug\system_armcm4.crf --depend .\debug\system_armcm4.d)
-I (..\..\Common\Include\ARMCM4.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4.h)(0x5C0FB348)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
-I (..\..\Common\Include\core_cmInstr.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cmFunc.h)(0x5C0FB348)
-I (..\..\Common\Include\core_cm4_simd.h)(0x5C0FB348)
-I (..\..\Common\Include\system_ARMCM4.h)(0x5C0FB348)
-F (..\..\Common\Startup\ARM\startup_ARMCM4.s)(0x5C10BA18)(--cpu Cortex-M4.fp --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\Keil_v5\ARM\RV31\INC-ID:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526"--list .\debug\startup_armcm4.lst --xref -o .\debug\startup_armcm4.o --depend .\debug\startup_armcm4.d)
-F (..\..\Common\Library\arm_cortexM4lf_math.lib)(0x5C0FB348)()
+F (..\..\..\Include\edge_brain.h)(0x5C174C75)()
+F (..\eb_frequency_and_featureExtration_example.c)(0x5C175C68)(-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST-o .\debug\eb_frequency_and_featureextration_example.o --omf_browse .\debug\eb_frequency_and_featureextration_example.crf --depend .\debug\eb_frequency_and_featureextration_example.d)
+I (..\..\Common\Include\arm_math.h)(0x5C113242)
+I (..\..\Common\Include\core_cm4.h)(0x5C113242)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\..\Common\Include\core_cmInstr.h)(0x5C113242)
+I (..\..\Common\Include\core_cmFunc.h)(0x5C113242)
+I (..\..\Common\Include\core_cm4_simd.h)(0x5C113242)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599EDB3E)
+I (..\..\..\Include\edge_brain.h)(0x5C174C75)
+F (..\..\..\Source\frequency_and_featureExtration\eb_envolop_spectrum_f32.c)(0x5C175A18)(-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST-o .\debug\eb_envolop_spectrum_f32.o --omf_browse .\debug\eb_envolop_spectrum_f32.crf --depend .\debug\eb_envolop_spectrum_f32.d)
+I (..\..\Common\Include\arm_math.h)(0x5C113242)
+I (..\..\Common\Include\core_cm4.h)(0x5C113242)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\..\Common\Include\core_cmInstr.h)(0x5C113242)
+I (..\..\Common\Include\core_cmFunc.h)(0x5C113242)
+I (..\..\Common\Include\core_cm4_simd.h)(0x5C113242)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599EDB3E)
+I (..\..\Common\Include\arm_const_structs.h)(0x5C113242)
+I (..\..\Common\Include\arm_common_tables.h)(0x5C113242)
+F (..\..\Common\Source\system_ARMCM4.c)(0x5C113242)(-c --cpu Cortex-M4.fp -D__MICROLIB --li -g -O0 --apcs=interwork -I ..\..\Common\Include -I ..\..\..\Include-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DARM_MATH_CM4 -D__FPU_PRESENT="1" -DDEBUG_ENABLE_SEMIHOST-o .\debug\system_armcm4.o --omf_browse .\debug\system_armcm4.crf --depend .\debug\system_armcm4.d)
+I (..\..\Common\Include\ARMCM4.h)(0x5C113242)
+I (..\..\Common\Include\core_cm4.h)(0x5C113242)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
+I (..\..\Common\Include\core_cmInstr.h)(0x5C113242)
+I (..\..\Common\Include\core_cmFunc.h)(0x5C113242)
+I (..\..\Common\Include\core_cm4_simd.h)(0x5C113242)
+I (..\..\Common\Include\system_ARMCM4.h)(0x5C113242)
+F (..\..\Common\Startup\ARM\startup_ARMCM4.s)(0x5C113242)(--cpu Cortex-M4.fp --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526"--list .\debug\startup_armcm4.lst --xref -o .\debug\startup_armcm4.o --depend .\debug\startup_armcm4.d)
+F (..\..\Common\Library\arm_cortexM4lf_math.lib)(0x5C113242)()
