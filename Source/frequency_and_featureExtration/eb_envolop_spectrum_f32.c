@@ -15,15 +15,20 @@
 #include "arm_const_structs.h"
 
 /**
- * @brief Float32 envolop spectrum.
- * @param[in]   *pSrc points to the input buffer
- * @param[out]  *pDst points to the output buffer
- * @param[in]   src_size the size of the input signal
- * @param[in]   fft_size the size of FFT transform points
+ * @brief Float32 envolop spectrum function.
+ * @param[in]   *pSrc points to the input buffer.
+ * @param[out]  *pDst points to the output buffer.
+ * @param[in]   *pBuffer points to the intermediate buffer used to insert zero to the input signal for arm_cfft_f32.
+ * @param[in]   *pTransMatrix points to the intermediate buffer used for the transform matrix of hilbert transform.
+ * @param[in]		fftSize the size of FFT transform points
  * @return none.
- * @note This is only an example to show the doc fomat and 
-				 project organization. A more efficient approach 
-				 should be implemented. 
+ * @note Using hilbert transform method to obtain envolop spectrum.
+ 					Float32 envolop spectrum using arm_cfft_f32,arm_offset_f32,arm_mult_f32 and arm_cmplx_mag_f32.
+ 					Caution: the floating-point complex FFT uses a mixed cardinality algorithm implemented by multiple bases 8 
+					and a single base 2 or base 4 algorithm. The algorithm supports lengths [16, 32, 64, ..., 4096] and uses 
+					different twiddle factor tables for each length as needed.
+					When arm_cfft_f32 is called, you need include the header file arm_const_structs.h.For example:
+					arm_cfft_f32(arm_cfft_sR_f32_len64,pSrc,0,1), the above formula is to calculate a 64-point FFT
 */
 
 

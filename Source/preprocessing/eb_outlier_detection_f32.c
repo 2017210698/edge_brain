@@ -5,11 +5,11 @@
 
 /**
  * @file eb_outlier_detection_f32.c
- * @author lwg
- * @date 28 Nov 2018
- * @brief Float32 envolop spectrum
+ * @author liwg
+ * @date 23 Dec 2018
+ * @brief Float32 outlier detection
  *
- * Float32 outlier detection using arm_cfft_f32 and arm_cfft_sR_f32.
+ * Float32 outlier detection using arm_max_f32.
  */
 
 #include "arm_math.h"
@@ -17,13 +17,12 @@
 /**
  * @brief Float32 outlier detection.
  * @param[in]   *pSrc points to the input buffer
- * @param[out]  *pDst points to the output buffer
  * @param[in]   srcLen the size of the input signal
- * @param[in]   dstLen the size of the output signal
+ * @param[in]   b the constant parameter
  * @return none.
- * @note This is only an example to show the doc fomat and 
-         project organization. A more efficient approach 
-         should be implemented. 
+ * @note  Using median average method to outlier detection, remove the
+          point away from the center. 
+          Float32 outlier detection using arm_max_f32.
 */
 void eb_outlier_detection_f32(
   float32_t * pSrc,
@@ -32,12 +31,12 @@ void eb_outlier_detection_f32(
 )
 
 {
-	//float32_t b;
+
 	float32_t Max;
   uint32_t maxIndex;
   float32_t median;
 
-  uint32_t srcCount; // loop variable
+  uint32_t srcCount; // loop variant
   float32_t lowerLimit;
   float32_t upperLimit;
 

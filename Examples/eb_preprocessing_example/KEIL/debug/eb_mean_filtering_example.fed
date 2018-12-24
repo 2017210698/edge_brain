@@ -1,33 +1,44 @@
-;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Mon Dec 17 16:20:59 2018
+;#<FEEDBACK># ARM Linker, 5060750: Last Updated: Mon Dec 24 09:46:29 2018
 ;VERSION 0.2
-;FILE arm_bitreversal2.o
-;FILE arm_cfft_f32.o
-__asm___14_arm_cfft_f32_c_4a34056b____REV16 <= USED 0
-__asm___14_arm_cfft_f32_c_4a34056b____REVSH <= USED 0
-;FILE arm_cfft_radix8_f32.o
-__asm___21_arm_cfft_radix8_f32_c_d03cf9fe____REV16 <= USED 0
-__asm___21_arm_cfft_radix8_f32_c_d03cf9fe____REVSH <= USED 0
-;FILE arm_cmplx_mag_f32.o
-__asm___19_arm_cmplx_mag_f32_c_bcd69883____REV16 <= USED 0
-__asm___19_arm_cmplx_mag_f32_c_bcd69883____REVSH <= USED 0
-;FILE arm_common_tables.o
-__asm___19_arm_common_tables_c_40998086____REV16 <= USED 0
-__asm___19_arm_common_tables_c_40998086____REVSH <= USED 0
-;FILE arm_const_structs.o
-__asm___19_arm_const_structs_c_b7cd87c8____REV16 <= USED 0
-__asm___19_arm_const_structs_c_b7cd87c8____REVSH <= USED 0
-;FILE arm_mult_f32.o
-__asm___14_arm_mult_f32_c_82cc5343____REV16 <= USED 0
-__asm___14_arm_mult_f32_c_82cc5343____REVSH <= USED 0
-;FILE arm_offset_f32.o
-__asm___16_arm_offset_f32_c_34081a3a____REV16 <= USED 0
-__asm___16_arm_offset_f32_c_34081a3a____REVSH <= USED 0
-;FILE eb_envolop_spectrum_f32.o
-__asm___25_eb_envolop_spectrum_f32_c_c1832500____REV16 <= USED 0
-__asm___25_eb_envolop_spectrum_f32_c_c1832500____REVSH <= USED 0
-;FILE eb_frequency_and_featureextration_example.o
-__asm___43_eb_frequency_and_featureExtration_example_c_main____REV16 <= USED 0
-__asm___43_eb_frequency_and_featureExtration_example_c_main____REVSH <= USED 0
+;FILE arm_biquad_cascade_df1_f32.o
+__asm___28_arm_biquad_cascade_df1_f32_c_50ec4510____REV16 <= USED 0
+__asm___28_arm_biquad_cascade_df1_f32_c_50ec4510____REVSH <= USED 0
+;FILE arm_biquad_cascade_df1_init_f32.o
+__asm___33_arm_biquad_cascade_df1_init_f32_c_02fa0436____REV16 <= USED 0
+__asm___33_arm_biquad_cascade_df1_init_f32_c_02fa0436____REVSH <= USED 0
+;FILE arm_conv_f32.o
+__asm___14_arm_conv_f32_c_63e0709a____REV16 <= USED 0
+__asm___14_arm_conv_f32_c_63e0709a____REVSH <= USED 0
+;FILE arm_correlate_f32.o
+__asm___19_arm_correlate_f32_c_89505502____REV16 <= USED 0
+__asm___19_arm_correlate_f32_c_89505502____REVSH <= USED 0
+;FILE arm_fill_f32.o
+__asm___14_arm_fill_f32_c_2f4865ec____REV16 <= USED 0
+__asm___14_arm_fill_f32_c_2f4865ec____REVSH <= USED 0
+;FILE arm_max_f32.o
+__asm___13_arm_max_f32_c_2aa8ec2a____REV16 <= USED 0
+__asm___13_arm_max_f32_c_2aa8ec2a____REVSH <= USED 0
+;FILE arm_scale_f32.o
+__asm___15_arm_scale_f32_c_b0d8e81b____REV16 <= USED 0
+__asm___15_arm_scale_f32_c_b0d8e81b____REVSH <= USED 0
+;FILE arm_sub_f32.o
+__asm___13_arm_sub_f32_c_af5ec417____REV16 <= USED 0
+__asm___13_arm_sub_f32_c_af5ec417____REVSH <= USED 0
+;FILE eb_acf_f32 .o
+__asm___13_eb_ACF_f32__c_755cd83a____REV16 <= USED 0
+__asm___13_eb_ACF_f32__c_755cd83a____REVSH <= USED 0
+;FILE eb_highpass_filtering_f32.o
+__asm___27_eb_highPass_filtering_f32_c_13ba216f____REV16 <= USED 0
+__asm___27_eb_highPass_filtering_f32_c_13ba216f____REVSH <= USED 0
+;FILE eb_mean_filtering_f32.o
+__asm___23_eb_mean_filtering_f32_c_2f8b1fbe____REV16 <= USED 0
+__asm___23_eb_mean_filtering_f32_c_2f8b1fbe____REVSH <= USED 0
+;FILE eb_outlier_detection_f32.o
+__asm___26_eb_outlier_detection_f32_c_81e0e277____REV16 <= USED 0
+__asm___26_eb_outlier_detection_f32_c_81e0e277____REVSH <= USED 0
+;FILE eb_preprocessing_example.o
+__asm___26_eb_preprocessing_example_c_ac475087____REV16 <= USED 0
+__asm___26_eb_preprocessing_example_c_ac475087____REVSH <= USED 0
 ;FILE startup_armcm4.o
 ;FILE system_armcm4.o
 SystemCoreClockUpdate <= USED 0
